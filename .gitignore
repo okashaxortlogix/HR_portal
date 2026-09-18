@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+portal/node_modules/
+backend/vendor/
+
+# Production Builds
+dist/
+portal/dist/
+build/
+backend/public/build/
+backend/public/hot/
+
+# Environment Variables & Local Secrets
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+auth.json
+
+# Databases & Local Storage
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.sqlite-wal
+backend/database/*.sqlite*
+backend/storage/*.key
+backend/storage/pail/
+backend/public/storage
+
+# Logs & Cache
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.phpunit.result.cache
+.phpunit.cache
+.phpactor.json
+
+# Operating System & IDE Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+.fleet/
+.nova/
+.zed/
+*.swp
+*.swo
+Homestead.json
+Homestead.yaml
