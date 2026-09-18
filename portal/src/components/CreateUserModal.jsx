@@ -76,8 +76,10 @@ export default function CreateUserModal({ isOpen, onClose, onCreateUser }) {
     setPassword('pass123');
   };
 
+  if (!isOpen) return null;
+
   return (
-    <div className="modal-overlay">
+    <div className="modal-overlay" onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}>
       <div className="modal-container" style={{ maxWidth: '520px' }}>
         <div className="modal-header">
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
